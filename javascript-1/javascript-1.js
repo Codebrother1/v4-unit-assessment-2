@@ -74,7 +74,7 @@ compareNums = (num1, num2) => {
 */
 
 //CODE HERE
-  
+const bestMovie = (movie) => `${movie} is the best movie ever!`
   
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -82,7 +82,7 @@ compareNums = (num1, num2) => {
 */
 
 //CODE HERE
-  
+  const jsNinja = () => `I am a JavaScript ninja!`
 
 ////////////////////PROBLEM 7////////////////////
 
@@ -103,7 +103,7 @@ compareNums = (num1, num2) => {
 */
 
 //CODE HERE
-  
+delete gameInfo.rating;
 
 ////////////////////PROBLEM 8////////////////////
 
@@ -125,6 +125,7 @@ compareNums = (num1, num2) => {
 */
 
 //CODE HERE
+
   
   
 ////////////////////PROBLEM 9////////////////////
