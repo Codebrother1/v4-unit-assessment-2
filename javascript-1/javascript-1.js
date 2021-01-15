@@ -9,7 +9,7 @@
 */
 
 //CODE HERE
-
+const myArr = [4, 'abc', ['cat', 'dog', 'bird'], 77]
 
 ////////////////////PROBLEM 2////////////////////
 /*
@@ -38,7 +38,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
 
-
+const animals = [...forest,...ocean, ...savannah,...desert]
 /*
     Now use the spread operator to make a copy of your animals array.
     Call the new array 'animalsCopy' and add 'elephant' onto the end of the array.
@@ -46,7 +46,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
 
-
+const animalsCopy = [...animals, "elephant"]
 ////////////////////PROBLEM 4////////////////////
 /*
     Write an arrow function called 'compareNums' that takes in 2 parameters, 
@@ -56,7 +56,13 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-
+compareNums = (num1, num2) => {
+    if(num1 > num2){
+        return num1
+    } else {
+        return num2
+    }
+}
   
 ////////////////////PROBLEM 5////////////////////
 /*
