@@ -12,3 +12,77 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(37, 37, 37);
+}
+
+h1 {
+  position: absolute;
+  padding: 3px;
+  float: left;
+  margin-left: 2%;
+  margin-top: 10px;
+  font-family: "Nunito", sans-serif;
+}
+span {
+  color: rgb(42, 171, 226);
+}
+
+ul {
+  width: auto;
+  float: right;
+  margin-top: 8px;
+}
+
+li {
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2vh;
+}
+
+/* cards */
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: black;
+  color: white;
+}
+.card-container {
+  padding: 2px 16px;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(42, 171, 226);
+  color: black;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.2vh;
+}
