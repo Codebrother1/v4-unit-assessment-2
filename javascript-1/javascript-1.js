@@ -21,7 +21,7 @@ const myArr = [4, 'abc', ['cat', 'dog', 'bird'], 77]
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
 //CODE HERE
-
+foundZ = nestedLetters[5][2][1];
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -38,7 +38,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
 
-const animals = [...forest,...ocean, ...savannah,...desert]
+const animals = [...forest,...ocean,...savannah,...desert];
 /*
     Now use the spread operator to make a copy of your animals array.
     Call the new array 'animalsCopy' and add 'elephant' onto the end of the array.
@@ -46,7 +46,7 @@ const animals = [...forest,...ocean, ...savannah,...desert]
 
 //CODE HERE
 
-const animalsCopy = [...animals, "elephant"]
+const animalsCopy = [...animals, "elephant"]; 
 ////////////////////PROBLEM 4////////////////////
 /*
     Write an arrow function called 'compareNums' that takes in 2 parameters, 
@@ -74,8 +74,9 @@ compareNums = (num1, num2) => {
 */
 
 //CODE HERE
-const bestMovie = (movie) => `${movie} is the best movie ever!`
-  
+const bestMovie = movie => {
+    return`${movie} is the best movie ever!`
+}  
 ////////////////////PROBLEM 6////////////////////
 /*
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
