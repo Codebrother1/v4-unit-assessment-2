@@ -207,12 +207,12 @@ let pairsArray = []
 
 //CODE HERE
 
-function Dog() {
-    this.name = name
-    this.age = age
-    this.breed = breed
-    this.tricks = tricks
-}
+    function Dog(name, age, breed, tricks) {
+        this.name = name;
+        this.age = age;
+        this.breed = breed;
+        this.tricks = tricks;
+    }
 /*
     Invoke your dog constructor passing in 'Fido' for the name, 3 for the age, 
     'Jack Russell' for the breed, and an array containing the strings 'sit' and 'shake'.
@@ -220,7 +220,7 @@ function Dog() {
 */
 
 //CODE HERE
-// const fido = Dog("Fido",3, "Jack Russell", ["sit", "shake"])
+const fido = new Dog("Fido",3, "Jack Russell", ["sit", "shake"])
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -230,7 +230,9 @@ function Dog() {
 */
 
 //CODE HERE
+function bark(){
 
+}
 
 /*
     Invoke the call method on bark, passing in fido as the context
@@ -249,7 +251,9 @@ function Dog() {
 */
 
 //CODE HERE
+function teachTrick(){
 
+}
 
 /*
     Invoke the bind method on teachTrick, passing in fido as the context and the string 'stay' as a trick.
@@ -268,6 +272,7 @@ function Dog() {
 */
 
 //CODE HERE
+function dogIntro(){}
 
 
 /*
@@ -277,7 +282,7 @@ function Dog() {
 */
 
 //CODE HERE
-  
+
 
 ////////////////////PROBLEM 15////////////////////
 /*
@@ -287,12 +292,12 @@ function Dog() {
 */
 
 //CODE HERE
-function Phone() {
-    this.brand = brand
-    this.model = model
-    this.storage = storage
-    this.color = color
-    this.sold = sold
+function Phone(brand, model, storage, color, sold) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.sold = sold;
 }
   
 /*
@@ -307,11 +312,11 @@ function Phone() {
 */
 
 //CODE HERE
-  let phone1 = new Phone()
+  let phone1 = new Phone("Lexus", "LS500", 1234, "grey",false)
   
-  let phone2 = new Phone()
+  let phone2 = new Phone("Benz", "S550", 5678, "black", false)
   
-  let phone3 = new Phone()
+  let phone3 = new Phone("Volvo", "V90", 9011, "white", false)
   
 /*
     Last, add a prototype method to Phone.
