@@ -126,8 +126,12 @@ delete gameInfo.rating;
 */
 
 //CODE HERE
-
-  
+// for (let key in shapes){
+//     if (shapes[key] % 2 === 0){
+//         return shapes[key]
+//     }
+    
+// }
   
 ////////////////////PROBLEM 9////////////////////
 
@@ -203,7 +207,12 @@ let pairsArray = []
 
 //CODE HERE
 
-
+function Dog() {
+    this.name = name
+    this.age = age
+    this.breed = breed
+    this.tricks = tricks
+}
 /*
     Invoke your dog constructor passing in 'Fido' for the name, 3 for the age, 
     'Jack Russell' for the breed, and an array containing the strings 'sit' and 'shake'.
@@ -211,7 +220,7 @@ let pairsArray = []
 */
 
 //CODE HERE
-  
+// const fido = Dog("Fido",3, "Jack Russell", ["sit", "shake"])
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -278,7 +287,13 @@ let pairsArray = []
 */
 
 //CODE HERE
-
+function Phone() {
+    this.brand = brand
+    this.model = model
+    this.storage = storage
+    this.color = color
+    this.sold = sold
+}
   
 /*
     Next make three new phones using your constructor function.
@@ -292,11 +307,11 @@ let pairsArray = []
 */
 
 //CODE HERE
-  // let phone1 = 
+  let phone1 = new Phone()
   
-  // let phone2 = 
+  let phone2 = new Phone()
   
-  // let phone3 = 
+  let phone3 = new Phone()
   
 /*
     Last, add a prototype method to Phone.
@@ -307,5 +322,6 @@ let pairsArray = []
 */
 
 //CODE HERE
-
-  
+Phone.prototype.sell= function() {
+    alert(`${this.brand}${this.model} has been sold.`)
+  }  

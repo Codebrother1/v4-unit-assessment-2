@@ -36,7 +36,10 @@ let foods = [
 */
 
 //CODE HERE
+// foods.forEach(function(food){
 
+// });
+// console.log(foods)
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
   For problems 2-4, you will be working with the products array below.
@@ -82,6 +85,12 @@ const products = [
 
 //CODE HERE
 
+// function saleProducts(arr){
+//   return arr.map((element, index, array) => {
+//     return element / .25
+//   })
+// }
+
 ////////////////////PROBLEM 3////////////////////
 /*
   A customer has placed an order - they want one of every product that has blue on it. 
@@ -91,7 +100,11 @@ const products = [
 */
 
 //CODE HERE
-
+// const blueProducts = (arr) => {
+//   return arr.filter((element, index, array) => {
+//     return element.price - .25;
+//   })
+// }
 ////////////////////PROBLEM 4////////////////////
 /*
   Now you'd like to get them their order total. 
@@ -100,6 +113,13 @@ const products = [
 */
 
 //CODE HERE
+
+ // const bobsTotal = purchases.reduce((acc, element) => {
+//   if(element.owner === 'Bob'){
+//     acc += element.price
+//   }
+//   return acc
+// }, 0)
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -130,7 +150,7 @@ const shippingInfo = {
 */
 
 //CODE HERE
-
+const helensInfo = Object.assign({}, shippingInfo, contactInfo)
 ////////////////////PROBLEM 6////////////////////
 /*
   Helen has a daughter named Ellen that lives at the same address.
@@ -139,14 +159,14 @@ const shippingInfo = {
 */
 
 //CODE HERE
-
+const ellensInfo = {...helensInfo,  name: "Ellen",email:'ellen@email.com'}
 ////////////////////PROBLEM 7////////////////////
 /* 
   Save Ellen's email to a new variable using destructuring.
 */
 
 //CODE HERE
-
+// const {email} = ellensInfo
 ////////////////////PROBLEM 8////////////////////
 /*
   In a single expression (one line), save the zip code and state 
@@ -154,7 +174,7 @@ const shippingInfo = {
 */
 
 //CODE HERE
-
+// const {zipCode,state} = newVar;
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
   Use the userInfo object below to complete problems 9-11.
@@ -216,7 +236,7 @@ const userInfo = {
 */
 
 //CODE HERE
-
+const shouldAlert = userInfo.settings.alerts;
 ////////////////////PROBLEM 10////////////////////
 /*
   Set the value of topic below to the last item in gn@rly_c0der_007's topics array
@@ -224,7 +244,7 @@ const userInfo = {
 */
 
 //CODE HERE
-
+// userInfo.topics[-1] = "topic below";
 ////////////////////PROBLEM 11////////////////////
 /*
   Set the value of commenterId below to the userId of the first response to 
@@ -251,6 +271,17 @@ const userInfo = {
 */
 
 //CODE HERE
+var person = new Object();
+person.name = "Terrance";
+person.age = 47;
+person.jobs = ["father","husband", "developer", "player"];
+person.birthday = function() {return(`I am ${this.age}`)},
+person.favorites = {
+  color:"green",
+  number:7,
+  book: "X",
+  kids: [{name: "Jaydin", age:14}, {name: "Tierre", age: 9}, {name: "Teryn", age: 7}, {name: "Tyler", age: 13}],
+}
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -273,10 +304,10 @@ const workout = {
   },
 }
 
-//let context1 = myFunc
-//let context1 = window
-//let context1 = global
-// let context1 = workout
+// let context1 = myFunc
+// let context1 = window
+// let context1 = global
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -288,7 +319,7 @@ function myFunc() {
   return this
 }
 
-//let context2 = myFunc
-// let context2 = window
-//let context2 = global
-//let context2 = workout
+// let context2 = myFunc
+let context2 = window
+// let context2 = global
+// let context2 = workout
